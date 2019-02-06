@@ -34,7 +34,6 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     public void onBindViewHolder(@NonNull EnViewHolder holder, int position) {
 
 
-       // holder.nName.setText(notificationListpojo.output.get(0).jobdata.get(position).getName());
         holder.nName.setText(notificationListpojo.getOutput().get(0).getFeedbackDetails().get(position).getData().get(0).getCustomerName());
         holder.nMobile.setText(notificationListpojo.getOutput().get(0).getFeedbackDetails().get(position).getData().get(0).getCustomerMobile());
         holder.ndateandtime.setText(notificationListpojo.getOutput().get(0).getFeedbackDetails().get(position).getData().get(0).getNotificationDate());

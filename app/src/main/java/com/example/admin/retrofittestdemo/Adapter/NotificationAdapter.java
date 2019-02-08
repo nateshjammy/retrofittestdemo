@@ -34,6 +34,8 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     public void onBindViewHolder(@NonNull EnViewHolder holder, int position) {
 
 
+
+
         holder.nName.setText(notificationListpojo.getOutput().get(0).getFeedbackDetails().get(position).getData().get(0).getCustomerName());
         holder.nMobile.setText(notificationListpojo.getOutput().get(0).getFeedbackDetails().get(position).getData().get(0).getCustomerMobile());
         holder.ndateandtime.setText(notificationListpojo.getOutput().get(0).getFeedbackDetails().get(position).getData().get(0).getNotificationDate());
@@ -42,11 +44,11 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
             @Override
             public void onClick(View v) {
 
-                Animation animation1 = new AlphaAnimation(0.5f, 1.2f);
-                animation1.setDuration(5000);
-                v.startAnimation(animation1);
 
-
+                 Animation animation1 = new AlphaAnimation(0.5f, 1.2f);
+                 animation1.setDuration(5000);
+                 v.startAnimation(animation1);
+                 
 
 
             }
